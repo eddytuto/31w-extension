@@ -4,7 +4,7 @@
 * version 1.0.0
 */
 /*
-Plugin Name: EM_carrousel
+Plugin Name: em_carrousel
 Version: 1.0.0
 */
 /*
@@ -38,7 +38,10 @@ add_action('wp_enqueue_scripts', 'emc_enqueue');
 function genere_boite(){
     $contenu = "
     <button class='btn_modale'>boîte modale</button>
-    <div class='carrousel'><button class='btn_fermer'>X</button>
+    <div class='carrousel'>
+        <button class='btn_fermer'>X</button>
+        <figure class='carrousel__figure'></figure>
+        <form class='carrousel__form'></form>
     </div>";
     return $contenu;
 }
